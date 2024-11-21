@@ -44,7 +44,7 @@ int ft_putnbr(int nbr)
     }
 
     if (nb >= 10)
-        count += ft_putnbr(nb / 10);
+        ft_putnbr(nb / 10);
     count += ft_putchar(strnb[nb % 10]);
     return (count);
 }
@@ -57,7 +57,7 @@ int ft_putexa(unsigned int nb)
 
     count = 0;
     if (nb >= 16)
-        count += ft_putexa(nb / 16);
+        ft_putexa(nb / 16);
     count += ft_putchar(strnb[nb % 16]);
     return (count);
 }
